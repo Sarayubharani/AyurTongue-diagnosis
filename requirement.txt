@@ -1,0 +1,15 @@
+streamlit
+numpy
+pandas
+matplotlib
+scikit-learn
+seaborn
+tensorflow
+keras
+fpdf
+io
+PIL
+cv2
+datetime
+rembg
+base64
