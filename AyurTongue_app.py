@@ -49,14 +49,14 @@ def predict_image(img_path):
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("C:\\Users\\saray\\Downloads\\tongue_classification_model.h5")
+    return tf.keras.models.load_model("tongue_classification_model.h5")
 
 model = load_model()
 #[theme]
 base="dark"
 primaryColor="purple"
 font="serif"
-logo_path = "C:\\Users\\saray\\Downloads\\ayurtongue logo.png"
+logo_path = "ayurtongue logo.png"
 # Mock AI prediction function
 
 
@@ -177,7 +177,7 @@ choice = st.sidebar.radio("Go to:", nav_options)
 
 if choice == "Home":
     #st.header("Welcome to the Diagnostic Interface")
-    st.image("C:\\Users\\saray\\Downloads\\AyurTonguee.png", caption="Indian Traditional Medicine Diagnostics", use_container_width=True)
+    st.image("AyurTonguee.png", caption="Indian Traditional Medicine Diagnostics", use_container_width=True)
     st.write("\nThis device integrates modern AI technology with the time-tested principles of Indian traditional medicine. By analyzing your tongue, it provides insights into your health condition, identifies dosha imbalances (Vata, Pitta, Kapha).")
     #st.write("\nKey Features:")
     st.markdown("- **Dosha Analysis**: Detect imbalances in Vata, Pitta, and Kapha doshas.")
