@@ -9,10 +9,3 @@ tensorflow
 matplotlib
 scikit-learn
 seaborn
-tensorflow
-keras
-io
-PIL
-datetime
-rembg
-base64
