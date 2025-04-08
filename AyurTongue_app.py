@@ -4,13 +4,11 @@ import pandas as pd
 import numpy as np
 import io
 from fpdf import FPDF
-import cv2
 from streamlit_cropper import st_cropper
 from datetime import datetime
 import base64
 from rembg import remove
 import tensorflow as tf
-import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocess_input
