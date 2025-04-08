@@ -9,3 +9,4 @@ tensorflow
 matplotlib
 scikit-learn
 seaborn
+onnxruntime
