@@ -1,0 +1,9 @@
+streamlit
+Pillow
+pandas
+numpy
+fpdf
+opencv-python
+streamlit-cropper
+rembg
+tensorflow
