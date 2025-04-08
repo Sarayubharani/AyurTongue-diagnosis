@@ -170,7 +170,7 @@ st.sidebar.markdown(f"""
         <h2>Navigation</h2>
     </div>
 """, unsafe_allow_html=True)
-nav_options = ["Home", "Upload Image", "View Reports", "Settings"]
+nav_options = ["Home", "Upload Image", "Settings"]
 choice = st.sidebar.radio("Go to:", nav_options)
 
 if choice == "Home":
@@ -211,7 +211,7 @@ elif choice == "Upload Image":
 
                 result = predict_image(bg_removed_image)
                 st.success("Diagnosis Complete")
-                st.write("result:",result)
+                #st.write("result:",result)
                 st.subheader("Diagnostic Results")
                 if result == 0:
                     #st.write("The tongue is of Kapha type")
@@ -262,17 +262,6 @@ elif choice == "Upload Image":
                 st.download_button(label="Download Report as PDF", data=pdf_output, file_name="diagnostic_report.pdf", mime="application/pdf")
 
 
-elif choice == "View Reports":
-    st.header("View Historical Reports")
-    # Placeholder for historical reports (could be retrieved from a database)
-    st.write("Your past diagnostic reports will appear here.")
-    report_data = {
-        "Date": ["2025-01-01", "2025-01-15"],
-        "Health Condition": ["Balanced Kapha", "Imbalanced Vata"],
-        "Suggestions": ["Incorporate warming foods", "Increase hydration and eat cooked vegetables"]
-    }
-    report_df = pd.DataFrame(report_data)
-    st.table(report_df)
 
 elif choice == "Settings":
     st.header("Settings")
