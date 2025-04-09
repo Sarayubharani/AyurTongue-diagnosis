@@ -153,7 +153,7 @@ def get_base64_image(file_path):
 data_uri = get_base64_image(logo_path)
 st.markdown(f"""
     <div style='display: flex; justify-content: center; align-items: center;'>
-        <img src='data:image/png;base64,{data_uri}' style='height:150px; margin-right: 20px;'>
+        <img src='data:image/png;base64,{data_uri}' style='height:130px; margin-right: 20px;'>
         <h1>AyurTongue Diagnosis</h1>
     </div>
 """, unsafe_allow_html=True)
@@ -166,7 +166,7 @@ st.write("\nWelcome to Ayurvedic tongue diagnosis! Your tongue reveals important
 #st.sidebar.title("Navigation")
 st.sidebar.markdown(f"""
     <div style='display: flex; align-items: center;'>
-        <img src='data:image/png;base64,{get_base64_image(logo_path)}' style='height:100px; margin-right: 10px;'>
+        <img src='data:image/png;base64,{get_base64_image(logo_path)}' style='height:90px; margin-right: 10px;'>
         <h2>Navigation</h2>
     </div>
 """, unsafe_allow_html=True)
